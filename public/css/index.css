@@ -28,11 +28,35 @@ html,body {
   margin: auto;
   position: absolute;
   top: 0; left: 0; bottom: 0; right: 0;
-  width: 50%;
-  height: 10%;
-  border: 8px solid #98FFCC;
+  width: 60vw;
+  height: 20vw;
+  color: white;
   text-align: center;
 }
+
+#header-text {
+  font-size: 55px;
+}
+
+.link-url {
+  font-size: 20px;
+  margin: 0 10px;
+}
+
+#resume-download {
+  background-color: black;
+  opacity: 0.7;
+  margin-top: 6%;
+  padding: 15px 32px;
+  border-radius: 10px;
+}
+
+#resume-download-text {
+  opacity: 1;
+  color: white;
+  margin-bottom: 0;
+}
+
 
 .contents {
   margin-top: 2%;
@@ -53,12 +77,7 @@ html,body {
   color: white;
   border: 0;
   background-color: #98FFCC;
-  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-
-#mainNav .navbar-brand {
-  color: #98FFCC;
-  font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 #mainNav .navbar-nav .nav-item, #mainNav .navbar-nav .nav-item .nav-link:hover {
