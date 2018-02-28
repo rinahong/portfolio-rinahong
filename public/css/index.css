@@ -41,6 +41,7 @@ html,body {
 .link-url {
   font-size: 20px;
   margin: 0 10px;
+  color: white;
 }
 
 #resume-download {
@@ -86,8 +87,8 @@ html,body {
 
 @media (min-width: 992px) {
   #mainNav {
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
     -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s;
