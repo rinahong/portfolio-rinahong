@@ -15,6 +15,9 @@ function scrollNav() {
 
 // Back to Top event
 $(document).ready(function(){
+  // Hide loading symbol when page is loaded
+  // $('#loading').hide();
+  // $('#window-ready-content').show();
 	//Check to see if the window is top if not then display button
 	$(window).scroll(function(){
 		if ($(this).scrollTop() > 15) {
