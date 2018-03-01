@@ -70,17 +70,6 @@ html,body {
   margin-bottom: 0;
 }
 
-@media (max-width: 320px) {
-  .intro-text {
-    padding-top: 150px;
-    padding-bottom: 100px;
-  }
-
-  #header-text {
-    font-size: 40px;
-  }
-}
-
 @media (max-width: 375px) {
   .intro-text {
     padding-top: 200px;
@@ -89,6 +78,17 @@ html,body {
 
   #header-text {
     font-size: 45px;
+  }
+}
+
+@media (max-width: 320px) {
+  .intro-text {
+    padding-top: 150px;
+    padding-bottom: 100px;
+  }
+
+  #header-text {
+    font-size: 40px;
   }
 }
 
