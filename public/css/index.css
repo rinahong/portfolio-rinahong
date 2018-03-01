@@ -1,20 +1,11 @@
+
 html,body {
   height:100%;
   width: 100%;
   margin:0;
 }
 
-.intro-bg {
-  height: 100vh;
-  width: 100vw;
-  margin: 0;
-  background: url('../images/home-bg.jpg') no-repeat center;
-  filter: grayscale(100%) contrast(80%);
-  position: relative;
-  background-size: cover;
-  z-index: -1;
-}
-
+/* ===Shared CSS============================= */
 .theme-color {
   background-color: #98FFCC;
   border-color: #98FFCC;
@@ -24,24 +15,45 @@ html,body {
   padding-top: 6%;
 }
 
-.center{
-  margin: auto;
-  position: absolute;
-  top: 0; left: 0; bottom: 0; right: 0;
-  width: 60vw;
-  height: 20vw;
-  color: white;
+.contents {
+  margin-top: 2%;
+  min-height: 100vh;
   text-align: center;
 }
 
-#header-text {
-  font-size: 55px;
+.section-header-text {
+  font-size: 45px;
 }
 
 .link-url {
   font-size: 20px;
   margin: 0 10px;
   color: white;
+}
+
+/* ===header CSS============================= */
+.intro-bg {
+  height: 100vh;
+  text-align: center;
+  color: white;
+  background-image: url('../images/home-bg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  filter: grayscale(100%) contrast(80%);
+}
+
+.intro-text {
+  padding-top: 250px;
+  padding-bottom: 100px;
+}
+
+#header-text {
+  font-size: 55px;
 }
 
 #resume-download {
@@ -58,14 +70,7 @@ html,body {
   margin-bottom: 0;
 }
 
-
-.contents {
-  margin-top: 2%;
-  min-height: 100vh;
-  text-align: center;
-}
-
-/*======================Nav Bar=============================*/
+/* ===Nav Bar CSS============================= */
 #mainNav {
   background-color: #212529;
 }
@@ -85,6 +90,12 @@ html,body {
   color: #98FFCC;
 }
 
+#mainNav .navbar-brand img {
+  width: 6vmax;
+  transform: rotate(45deg);
+  margin-left: 2vw
+}
+
 @media (min-width: 992px) {
   #mainNav {
     padding-top: 15px;
@@ -97,7 +108,7 @@ html,body {
   }
 
   #mainNav .navbar-brand {
-    font-size: 1.75em;
+    /*font-size: 1.75em;*/
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
@@ -111,20 +122,26 @@ html,body {
     background-color: #212529;
   }
   #mainNav.navbar-shrink .navbar-brand {
-    font-size: 1.25em;
-    padding: 12px 0;
+    /*font-size: 1.25em;*/
+    height: 20px;
+    /*padding: 12px 0;*/
+  }
+
+  #mainNav .navbar-brand img {
+    width: 5vmax;
+    transform: rotate(45deg);
+    margin-left: 2vw
   }
 }
 
-
-
+/* ===Services CSS============================= */
 .services-image {
   width: 200px;
   height: 200px;
   margin-bottom: 25px;
 }
 
-/*=====================Portfolio==============================*/
+/* ===Portfolio CSS============================= */
 section#portfolio {
   background-color: #edeeef;
 }
@@ -170,8 +187,7 @@ section#portfolio {
 }
 
 
-
-/*=====================About: Timeline ==============================*/
+/* ===About - Timeline CSS============================= */
 .timeline {
   position: relative;
   padding: 0;
@@ -359,7 +375,7 @@ section#portfolio {
   }
 }
 
-/*=====================Contact==============================*/
+/* ===Contact CSS============================= */
 section#contact {
   background-color: #212529;
   background-repeat: no-repeat;
