@@ -30,15 +30,15 @@ const contactController = {
       if (error) {
         // res.locals.flashType = "danger"
         // res.locals.messages = "Error, Email Not Sent...";
-        // res.redirect('/');
-        res.render('contact/contact-fail.ejs')
+        res.redirect('/');
+        // res.render('contact/contact-fail.ejs')
       }
       else {
         // res.locals.flashType= "success";
         // res.locals.messages = "Email has successfully sent!";
-        // res.redirect('/');
+        res.redirect('/');
         // res.render('welcome/home');
-        res.render('contact/contact-success.ejs')
+        // res.render('contact/contact-success.ejs')
       }
     });
   }
