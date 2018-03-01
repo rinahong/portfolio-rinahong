@@ -36,8 +36,9 @@ const contactController = {
       else {
         res.locals.flashType= "success";
         res.locals.messages = "Email has successfully sent!";
-        res.redirect('/');
-        // res.render('welcome/home')
+        // res.redirect('/');
+        // res.render('welcome/home');
+        res.render('contact/contact-success.ejs')
       }
     });
   }
