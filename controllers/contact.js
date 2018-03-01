@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const nodemailer = require('nodemailer');
 
+
 const contactController = {
   submit (req, res, next) {
     let mailOpts, smtpTrans;
@@ -17,7 +18,7 @@ const contactController = {
         pass: process.env.GMAIL_PWD
       }
     });
-    
+
     mailOpts = {
       from: req.body.name + ' &lt;' + req.body.email + '&gt;',
       to: process.env.GMAIL_USER,
@@ -27,10 +28,15 @@ const contactController = {
 
     smtpTrans.sendMail(mailOpts, function (error, response) {
       if (error) {
-        res.render('contact/contact-fail');
+        res.locals.flashType = "danger"
+        res.locals.messages = "Error, Email Not Sent...";
+        // res.render('welcome/home.ejs')
       }
       else {
-        res.render('contact/contact-success');
+        res.locals.flashType= "success";
+        res.locals.messages = "Email has successfully sent!";
+        res.redirect('/');
+        // res.render('welcome/home')
       }
     });
   }

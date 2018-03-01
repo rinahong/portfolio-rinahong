@@ -1,11 +1,10 @@
-const express= require('express');
+const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 const path = require('path');
 const moment = require('moment');
 const knex = require('./db');
-require('dotenv').config();
-// const nodemailer = require('nodemailer');
+require('dotenv').config(); //For Process.env
 const root = require('./routes');
 
 
@@ -17,6 +16,12 @@ app.use(bodyParser.urlencoded({extended: false}));
 
 app.use((req, res, next) => {
   console.log(`📝 ${req.method} – ${req.path} – ${new Date().toString()}`);
+  next();
+});
+
+app.use(function (req, res, next) {
+  res.locals.flashType = "";
+  res.locals.messages = "";
   next();
 });
 

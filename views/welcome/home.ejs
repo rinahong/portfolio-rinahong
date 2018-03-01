@@ -2,6 +2,12 @@
   <header class="intro-bg" id="intro-content">
     <div class="container">
       <div class="intro-text">
+        <% if (messages) { %>
+          <div class="alert alert-<%=status%> alert-dismissible">
+            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+            <%= messages %>
+          </div>
+        <% } %>
         <p id="header-text"><strong>SOFTWARE / WEB DEVELOPER</strong></p>
         <a href="https://github.com/rinahong" target="_blank" style="color:white">
           <span class="link-url"><i>github.com/rinahong</i></span>
