@@ -39,6 +39,6 @@ app.use((err, req, res, next) => {
 
 const DOMAIN = 'localhost';
 const PORT = '3002';
-app.listen(PORT, DOMAIN, () => {
-  console.log(`🖥 Server listenning on http://${DOMAIN}:${PORT}`);
+app.listen(PORT, () => {
+  console.log(`🖥 Server listenning on http://localhost:${PORT}`);
 });
