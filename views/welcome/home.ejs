@@ -48,11 +48,6 @@
           <h4 class="service-heading">Others</h4>
           <p class="text-muted">Heroku, Git, GitHub, AWS</p>
         </div>
-        <div class="col-md-4">
-          <img class="services-image img-fluid" src="../images/other.png" alt="other">
-          <h4 class="service-heading">Others</h4>
-          <p class="text-muted">Heroku, Git, GitHub, AWS</p>
-        </div>
       </div>
     </div>
   </section>
@@ -121,6 +116,33 @@
             </div>
           </div>
         </div>
+
+      </div>
+
+      <div class="row space-top space-bottom">
+        <div class="col-md-4 portfolio-image-div">
+          <%# for next project insert here%>
+        </div>
+
+        <div class="col-md-4 portfolio-image-div">
+          <img src="../images/codeshare.png" class="portfolio-image">
+          <div class="single-menu">
+            <div class="single-menu-text">
+              <h3>CodeShare</h3>
+            </div>
+            <div class="single-menu-text" data-toggle="modal" data-target="#codeShareModal">
+              <i class="far fa-plus-square fa-3x"></i>
+            </div>
+            <div class="anchor-site">
+              <a href="https://github.com/rinahong/codeShare" target="_blank" class="link-url">Source Code</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 portfolio-image-div">
+          <%# for next project insert here%>
+        </div>
+
       </div>
     </div>
   </section>
@@ -179,6 +201,21 @@
             </div>
             <div class="timeline-panel">
               <div class="timeline-heading">
+                <h4>May 2018 - Present</h4>
+                <h4 class="subheading">Associate Programmer Analyst</h4>
+                <h5 class="subheading"> Broadridge Financial Solutions </h5>
+              </div>
+              <div class="timeline-body">
+                <p class="text-muted"></p>
+              </div>
+            </div>
+          </li>
+          <%# <li>
+            <div class="timeline-image">
+              <img class="rounded-circle img-fluid" src="../images/rina-hong.png" alt="rinahong-profile">
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
                 <h4>Present</h4>
                 <h4 class="subheading">Looking for Full Time Opportunity</h4>
               </div>
@@ -186,7 +223,7 @@
                 <p class="text-muted">Software/Web developer postion.</p>
               </div>
             </div>
-          </li>
+          </li>%>
         </ul>
       </div>
     </div>
@@ -211,4 +248,5 @@
 <%- include('../projectModal/portfolio') %>
 <%- include('../projectModal/theJourney') %>
 <%- include('../projectModal/techcore') %>
+<%- include('../projectModal/codeshare') %>
 <%- include('../partials/footer') %>

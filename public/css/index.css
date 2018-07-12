@@ -25,6 +25,10 @@ html,body {
   padding-top: 6%;
 }
 
+.space-bottom {
+  padding-bottom: 6%;
+}
+
 .contents {
   margin-top: 2%;
   min-height: 100vh;
