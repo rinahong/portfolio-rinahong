@@ -3,7 +3,6 @@ const app = express();
 const bodyParser = require('body-parser');
 const path = require('path');
 const moment = require('moment');
-const knex = require('./db');
 require('dotenv').config(); //For Process.env
 const root = require('./routes');
 
